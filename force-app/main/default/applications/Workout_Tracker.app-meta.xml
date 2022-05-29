@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#30E18C</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Workout Tracker</label>
+    <navType>Standard</navType>
+    <tabs>standard-Account</tabs>
+    <tabs>Workout__c</tabs>
+    <tabs>Workout_Set__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Workout_Tracker_UtilityBar</utilityBar>
+</CustomApplication>
