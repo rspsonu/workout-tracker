@@ -14,9 +14,10 @@
     "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "postinstall": "husky install",
     "precommit": "lint-staged",
-    "start": "npm run org:create && npm run source:push && npm run org:open",
+    "start": "npm run org:create && npm run source:push && npm run permset:assign && npm run org:open",
     "org:create": "sfdx force:org:create --definitionfile .\\config\\project-scratch-def.json --setdefaultusername --setalias workout-tracker",
     "source:push": "sfdx force:source:push",
+    "permset:assign": "sfdx force:user:permset:assign -n \"Workout_Access\"",
     "org:open": "sfdx force:org:open",
     "stop": "sfdx force:org:delete --noprompt"
   },
